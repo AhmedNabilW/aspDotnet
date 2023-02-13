@@ -222,7 +222,7 @@ table, tr {
                       <td>
 
 
-        <asp:Button ID="Button4" runat="server" CssClass="auto-style14" Text="المهام" Width="310px" BackColor="#82FF82" Height="45px" PostBackUrl="~/WebForm6.aspx" /> 
+        <asp:Button ID="Button4" runat="server" CssClass="auto-style14" Text="المهام" Width="310px" BackColor="#82FF82" Height="45px" PostBackUrl="~/WebForm6.aspx" OnClick="Button4_Click" /> 
                       </td>
                   </tr>
               </table>

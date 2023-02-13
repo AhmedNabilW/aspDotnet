@@ -70,6 +70,7 @@
     <Content Include="images\logo.png" />
     <Content Include="images\logo.svg" />
     <Content Include="logo.png" />
+    <Content Include="main_custom_style.css" />
     <Content Include="w.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
@@ -183,6 +184,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="style\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
