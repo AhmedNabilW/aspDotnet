@@ -25,11 +25,11 @@ namespace TF_TEST1
 
             if (true)
             {
-                Response.Redirect("WebForm2.aspx");
+                Response.Redirect("WebForm3.aspx");
             }
             if (true)
             {
-                Response.Redirect("WebForm2.aspx");
+                Response.Redirect("WebForm3.aspx");
                 
 
             }
@@ -41,7 +41,7 @@ namespace TF_TEST1
             {
                 Response.Redirect("WebForm2.aspx");
             }
-            if (ValidateAcademic(Login1.UserName, Login1.Password))
+            if (ValidateAcademic(User_ID.Text, User_Password.Text))
             {
                 Response.Redirect("WebForm3.aspx");
             }
@@ -53,7 +53,7 @@ namespace TF_TEST1
             {
                 Response.Redirect("WebForm2.aspx");
             }
-            if (ValidateTraining(Login1.UserName, Login1.Password))
+            if (ValidateTraining(User_ID.Text, User_Password.Text))
             {
                 Response.Redirect("WebForm4.aspx");
             }
@@ -65,7 +65,7 @@ namespace TF_TEST1
             {
                 Response.Redirect("WebForm2.aspx");
             }
-            if (ValidateAdmin(Login1.UserName, Login1.Password))
+            if (ValidateAdmin(User_ID.Text, User_Password.Text))
             {
                 Response.Redirect("WebForm4.aspx");
             }
@@ -85,12 +85,12 @@ namespace TF_TEST1
             bool status;
             String mycon = "Data Source=DESKTOP-1HIT6UB\\SQLEXPRESS;Initial Catalog=\"project database\";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             SqlConnection scon = new SqlConnection(mycon);
-            SqlDataAdapter SQLAdapter = new SqlDataAdapter("SELECT * From Student_Info WHERE Student_Id=" + Login1.UserName + " And Password_Student= " + Login1.Password,mycon);
+            SqlDataAdapter SQLAdapter = new SqlDataAdapter("SELECT * From Student_Info WHERE Student_Id=" + User_ID.Text + " And Password_Student= " + User_Password.Text,mycon);
             DataTable DT =new DataTable();
             SQLAdapter.Fill(DT);
             if (DT.Rows.Count > 0)
             {
-                Session["username"] = Login1.UserName;
+                Session["username"] = User_ID.Text;
                 status= true;
             }
             else
@@ -139,12 +139,12 @@ namespace TF_TEST1
             
             String mycon = "Data Source=DESKTOP-1HIT6UB\\SQLEXPRESS;Initial Catalog=\"project database\";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             SqlConnection scon = new SqlConnection(mycon);
-            SqlDataAdapter SQLAdapter = new SqlDataAdapter("SELECT * From Academic_Info WHERE Academic_Id=" + Login1.UserName + " And Password_Academic= " + Login1.Password, mycon);
+            SqlDataAdapter SQLAdapter = new SqlDataAdapter("SELECT * From Academic_Info WHERE Academic_Id=" + User_ID.Text + " And Password_Academic= " + User_Password.Text, mycon);
             DataTable DT = new DataTable();
             SQLAdapter.Fill(DT);
             if (DT.Rows.Count > 0)
             {
-                Session["username"] = Login1.UserName;
+                Session["username"] = User_ID.Text;
                 status = true;
             }
             else
@@ -160,12 +160,12 @@ namespace TF_TEST1
 
             String mycon = "Data Source=DESKTOP-1HIT6UB\\SQLEXPRESS;Initial Catalog=\"project database\";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             SqlConnection scon = new SqlConnection(mycon);
-            SqlDataAdapter SQLAdapter = new SqlDataAdapter("SELECT * From Training_Info WHERE Training_Id=" + Login1.UserName + " And Password_Training= " + Login1.Password, mycon);
+            SqlDataAdapter SQLAdapter = new SqlDataAdapter("SELECT * From Training_Info WHERE Training_Id=" + User_ID.Text + " And Password_Training= " + User_Password.Text, mycon);
             DataTable DT = new DataTable();
             SQLAdapter.Fill(DT);
             if (DT.Rows.Count > 0)
             {
-                Session["username"] = Login1.UserName;
+                Session["username"] = User_ID.Text;
                 status = true;
             }
             else
@@ -181,12 +181,12 @@ namespace TF_TEST1
 
             String mycon = "Data Source=DESKTOP-1HIT6UB\\SQLEXPRESS;Initial Catalog=\"project database\";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             SqlConnection scon = new SqlConnection(mycon);
-            SqlDataAdapter SQLAdapter = new SqlDataAdapter("SELECT * From Admin_Info WHERE Admin_Id=" + Login1.UserName + " And Password_Admin= " + Login1.Password, mycon);
+            SqlDataAdapter SQLAdapter = new SqlDataAdapter("SELECT * From Admin_Info WHERE Admin_Id=" + User_ID.Text + " And Password_Admin= " + User_Password.Text, mycon);
             DataTable DT = new DataTable();
             SQLAdapter.Fill(DT);
             if (DT.Rows.Count > 0)
             {
-                Session["username"] = Login1.UserName;
+                Session["username"] = User_ID.Text;
                 status = true;
             }
             else

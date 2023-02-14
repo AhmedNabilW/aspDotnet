@@ -29,16 +29,16 @@ namespace TF_TEST1
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["username"] == null)
-            {
-                Response.Redirect("WebForm1.aspx");
-            }
-            else
-            {
-                con.ConnectionString = "Data Source=DESKTOP-1HIT6UB\\SQLEXPRESS;Initial Catalog=\"project database\";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-                con.Open();
-                showdata();
-            }
+            //if (Session["username"] == null)
+            //{
+            //    Response.Redirect("WebForm1.aspx");
+            //}
+            //else
+            //{
+            //    con.ConnectionString = "Data Source=DESKTOP-1HIT6UB\\SQLEXPRESS;Initial Catalog=\"project database\";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            //    con.Open();
+            //    showdata();
+            //}
         }
 
         protected void Button7_Click(object sender, EventArgs e)
