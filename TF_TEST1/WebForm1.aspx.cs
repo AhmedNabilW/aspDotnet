@@ -25,11 +25,11 @@ namespace TF_TEST1
 
             if (true)
             {
-                Response.Redirect("WebForm2.aspx");
+                Response.Redirect("WebForm3.aspx");
             }
             if (true)
             {
-                Response.Redirect("WebForm2.aspx");
+                Response.Redirect("WebForm3.aspx");
                 
 
             }
@@ -181,12 +181,12 @@ namespace TF_TEST1
 
             String mycon = "Data Source=DESKTOP-1HIT6UB\\SQLEXPRESS;Initial Catalog=\"project database\";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             SqlConnection scon = new SqlConnection(mycon);
-            SqlDataAdapter SQLAdapter = new SqlDataAdapter("SELECT * From Admin_Info WHERE Admin_Id=" + Login1.UserName + " And Password_Admin= " + Login1.Password, mycon);
+            SqlDataAdapter SQLAdapter = new SqlDataAdapter("SELECT * From Admin_Info WHERE Admin_Id=" + Login1.Text + " And Password_Admin= " + Login2.Text, mycon);
             DataTable DT = new DataTable();
             SQLAdapter.Fill(DT);
             if (DT.Rows.Count > 0)
             {
-                Session["username"] = Login1.UserName;
+                Session["username"] = Login1.Text;
                 status = true;
             }
             else

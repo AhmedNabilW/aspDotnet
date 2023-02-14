@@ -68,18 +68,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\logo.png" />
-    <Content Include="images\logo.svg" />
     <Content Include="logo.png" />
-    <Content Include="main_custom_style.css" />
     <Content Include="style\main_custom_style.css" />
-    <Content Include="style\WebForm2_custom_style.css" />
+    <Content Include="style\style1_custom.css" />
+    <Content Include="style\style2_custom.css" />
     <Content Include="w.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm10.aspx" />
     <Content Include="WebForm11.aspx" />
     <Content Include="WebForm2.aspx" />
-    <Content Include="WebForm2_custom_style.css" />
     <Content Include="WebForm3.aspx" />
     <Content Include="WebForm4.aspx" />
     <Content Include="WebForm5.aspx" />

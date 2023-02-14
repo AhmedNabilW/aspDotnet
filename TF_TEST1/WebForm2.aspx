@@ -7,7 +7,7 @@
 <head runat="server">
     <title></title>
 
-    <link href="style/WebForm2_custom_style.css" rel="stylesheet" type="text/css" />
+    <link href="style/style1_custom.css" rel="stylesheet" type="text/css" />
  
 </head>
 <body>
