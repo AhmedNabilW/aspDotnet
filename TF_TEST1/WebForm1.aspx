@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head runat="server">
-    <link href="main_custom_style.css" rel="stylesheet" type="text/css" />
+    <link href="style/main_custom_style.css" rel="stylesheet" type="text/css" />
     <title></title>
 
 
@@ -38,9 +38,10 @@
                         <asp:TextBox ID="TextBox2" runat="server" placeholder="كلمة المرور"  dir="rtl" TextMode="Password"></asp:TextBox>
                     </div>
                     <div class="checkbox_container">
-                        
-                        <asp:CheckBox ID="CheckBox1" runat="server" />
+
                         <label style="border-bottom:solid 1px black">تذكرني</label>
+                        <asp:CheckBox ID="CheckBox1" runat="server" />
+
                     </div>
                     <asp:Button class="submit_button" ID="Button1" runat="server" OnClick="Button1_Click" PostBackUrl="~/WebForm2.aspx" Text="دخول" Height="44px" />
                 </div>

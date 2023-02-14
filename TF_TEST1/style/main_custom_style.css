@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #27ae60;
+    background-image: url(../images/cubes.png);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    /*background-color: yellow;*/
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    width: 10%;
+}
+
+.title {
+    /*background-color: blue;*/
+    width: 100%;
+    padding: 50px 0;
+    font-size: 30px;
+    color: white;
+    font-weight: 900;
+}
+
+/*-------log in card-----*/
+.log_in_card {
+    width: 350px;
+    height: 300px;
+    padding: 20px 50px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.card_title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #27ae60;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-bottom: dashed 2px #262626;
+}
+
+.user_name_container {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.password_container {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.log_in_card .label {
+    text-align: right;
+}
+
+.log_in_card input[type=text], .log_in_card input[type=password] {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: solid 1px #262626;
+    border-radius: 5px;
+    transition: ease-in-out 300ms;
+}
+
+    .log_in_card input[type=text]::placeholder, .log_in_card input[type=password]::placeholder {
+        font-size: 15px;
+    }
+
+    .log_in_card input[type=text]:focus, .log_in_card input[type=password]:focus {
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+.checkbox_container {
+    margin-top: 10px;
+    float: right;
+}
+
+.submit_button {
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #27ae60;
+    background-image: url(../images/cubes.png);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: ease-in-out 300ms;
+}
+
+    .submit_button:hover {
+        background-color: #229c55;
+    }
