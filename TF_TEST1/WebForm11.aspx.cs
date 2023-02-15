@@ -23,8 +23,8 @@ namespace TF_TEST1
             cmd.Connection = con;
             sda.SelectCommand = cmd;
             sda.Fill(ds);
-            Label1.Text = ds.Tables[0].Rows[0]["Name_Student"].ToString();
-            Label2.Text = ds.Tables[0].Rows[0]["Student_Id"].ToString();
+            Name_label.Text = ds.Tables[0].Rows[0]["Name_Student"].ToString();
+            ID_label.Text = ds.Tables[0].Rows[0]["Student_Id"].ToString();
 
         }
         protected void Page_Load(object sender, EventArgs e)
