@@ -72,6 +72,7 @@
     <Content Include="style\main_custom_style.css" />
     <Content Include="style\style1_custom.css" />
     <Content Include="style\style2_custom.css" />
+    <Content Include="style\style3_custom.css" />
     <Content Include="w.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
